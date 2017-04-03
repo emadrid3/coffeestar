@@ -98,7 +98,7 @@ class sale(models.Model):
 	id_bill_payment = models.ForeignKey(bill_payment, on_delete = models.CASCADE)
 	quantity_sold = models.IntegerField()
 	id_product = models.ForeignKey(product, on_delete = models.CASCADE)
-	sale_value = models.DecimalField(max_digits = 10, decimal_places = 7)
+	sale_value = models.DecimalField(max_digits = 10, decimal_places = 5)
 
 
 	def __str__(self):
