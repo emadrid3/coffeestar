@@ -1,8 +1,22 @@
 from django.forms import ModelForm
-from coffeehop.models import departament
+from django import forms
+from coffeeshop.models import city, departament, client
 
-class dpto_form(ModelForm):
+class dpto_form(forms.ModelForm):
+
 	class Meta:
 		model = departament
-		field = ['id_dpto', 'dpto_name']
+		fields = ('id_dpto', 'dpto_name')
+		labels = {
+			'id_dpto': ('id departament'),
+			'dpto_name': ('name departament') 
+		}
+
+class client_form(forms.ModelForm):
+
+	class Meta:
+		model = client
+		fields = ('name_client', 'id_client', 'id_city')
+	
+	
 

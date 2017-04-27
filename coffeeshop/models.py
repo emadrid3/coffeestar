@@ -53,7 +53,7 @@ class description_bill_payment(models.Model):
 
 
 	def __str__(self):
-		return self.id_payment
+		return str(self.id_payment)
 
 
 class bill_payment(models.Model):
@@ -65,7 +65,6 @@ class bill_payment(models.Model):
 
 	def __str__(self):
 		return self.id_bill_payment
-
 
 
 
