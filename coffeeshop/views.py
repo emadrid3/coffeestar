@@ -13,7 +13,6 @@ def index(request):
 		if form.is_valid() and form_2.is_valid():
 			post = form.save(commit = False)
 			post_2 = form_2.save(commit = False)
-			post.dpto_name = post.dpto_name.capitalize()
 			post.save()
 			post_2.save()
 			html = '<h1>Thanks</h1>'
