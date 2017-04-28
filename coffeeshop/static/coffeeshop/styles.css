@@ -1,0 +1,84 @@
+/* EN ESTA VA A IR EL CSS EN GENERAL DE ADMINISTRADOR:
+   -ORDEN DE LOS BOTONES REGISTRER COMPRA, REVISAR PRODUCTOS, AÑADIR PRODUCTOS, REVISAR PRODUCTOS
+   -ORDEN DE LAS IMAGENES
+   -SEPARACION DEL FRAME QUE VA A CONTENER CADA FORMILARIO POR CADA BOTON
+   -ESTILO DE LOS BOTONES
+   -ESTILO DE LOS LABELS
+   -ESTILO DE LOS CUADROS DE TEXTO
+ */
+body{
+	background-color: #696969;
+}
+
+button{
+	border-radius: 10px;
+	width: 200px;
+	height: 30px;
+	border-color: blue;
+	box-shadow: 2px 2px 5px black;
+	font-family: arial;
+	font-size: 120%;
+}
+
+.estoy{
+	border-right-width: 0;
+	background-color: white;
+}
+
+.butPrinci{
+	position: absolute;
+	width: 17%;
+	height: 30%;
+	text-align: center;
+	top: 30px;
+	border: 3px;
+}
+
+.butPrinci ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+.butPrinci ul li a {
+	border-radius: 20px;
+	border-style: solid;
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 5%;
+}
+
+.butPrinci ul li a:hover {
+    background: #B22222;
+    border-left: 10px solid #333;
+    color: white;
+}
+
+.areaTrabajo{
+	position: absolute;
+	left: 15%;
+	top: 0;
+	width: 84.5%;
+	height: 98%;
+	border-style: solid;
+	background-color: white;
+	padding-left: 0;
+}
+
+.imagenes1{
+	position: absolute;
+	left: 0;
+	width: 15%;
+	height: 30%;
+	bottom: 55px;
+}
+
+.imagenes2{
+	position: absolute;
+	left: 0;
+	width: 15%;
+	height: 18%;
+	bottom: 0;
+}
